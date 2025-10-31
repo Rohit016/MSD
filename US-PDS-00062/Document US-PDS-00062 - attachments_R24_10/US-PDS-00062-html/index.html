@@ -720,55 +720,6 @@
       width: 100%;
     }
   </style>
-
-  <style>
-    /* Default: show fallback, hide kinetic */
-    .show-fallback { display: block !important; }
-    .show-kinetic { display: none !important; }
-
-    /* When kinetic mode is active (fallback hidden) */
-    #Kinetic:checked ~ * .show-fallback {
-      display: none !important;
-    }
-    #Kinetic:checked ~ * .show-kinetic {
-      display: block !important;
-    }
-
-    /* Inside Yahoo-compatible kinetic block */
-    @media yahoo, only screen and (min-width:0) {
-      #Kinetic:checked ~ * .show-fallback {
-        display: none !important;
-      }
-      #Kinetic:checked ~ * .show-kinetic {
-        display: block !important;
-      }
-    }
-
-    @media only screen and (max-device-width: 600px), only screen and (max-width: 600px) {
-        .show-for-large {
-            display: none !important;
-            width: 0 !important;
-            mso-hide: all !important;
-            overflow: hidden !important;
-        }
-
-        .hide-for-large {
-            display: table !important;
-            width: 100% !important;
-            height: auto !important;
-            overflow: visible !important;
-            max-width: 100% !important;
-            max-height: 100% !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-        }
-
-        .hide-for-large table {
-            display: table !important;
-        }
-    }
-
-  </style>
 </head>
 
 <body bgcolor="#FFFFFF" style="padding:0; margin:0px;">
@@ -1549,61 +1500,8 @@ class="" style="vertical-align:top;width:570px;"
                                                                           cellspacing="0">
                                                                           <tr>
                                                                             <td>
-                                                                              <!-- gif start -->
-                                                                              <table border="0" cellpadding="0"
-                                                                                cellspacing="0" class="show-kinetic"
-                                                                                style="width:100%;max-width:620px;display:none;">
-                                                                                <tbody>
-                                                                                  <tr>
-                                                                                    <td valign="top" align="center"
-                                                                                      class=""
-                                                                                      style="border-radius: 8px; ">
-                                                                                      <table border="0" cellpadding="0"
-                                                                                        cellspacing="0"
-                                                                                        class="show-for-large">
-                                                                                        <tbody>
-                                                                                          <tr>
-                                                                                            <td valign="top"
-                                                                                              align="center">
-                                                                                              <img
-                                                                                                src="./Images/gif-img-desk.gif"
-                                                                                                alt="KEYTRUDA QLEX highlights: administration times, injection sites, and important dosage info"
-                                                                                                width="620" border="0"
-                                                                                                style="display:block; width:100%; max-width:620px; height:auto; border:0; outline:none; text-decoration:none;">
-                                                                                            </td>
-                                                                                          </tr>
-                                                                                        </tbody>
-                                                                                      </table>
-                                                                                      <table border="0" cellpadding="0"
-                                                                                        cellspacing="0"
-                                                                                        class="hide-for-large"
-                                                                                        style="display: none;">
-                                                                                        <tbody>
-                                                                                          <tr>
-                                                                                            <td valign="top"
-                                                                                              align="center">
-                                                                                              <img
-                                                                                                src="./Images/gif-img-mob.gif"
-                                                                                                alt="KEYTRUDA QLEX highlights: administration times, injection sites, and important dosage info"
-                                                                                                width="620" border="0"
-                                                                                                style="display:block; width:100%; max-width:620px; height:auto; border:0; outline:none; text-decoration:none;">
-                                                                                            </td>
-                                                                                          </tr>
-                                                                                        </tbody>
-                                                                                      </table>
-                                                                                    </td>
-                                                                                  </tr>
-                                                                                  <tr>
-                                                                                      <td class="spacer lnht20 staticacc interactive" height="" style="height:20px;font-size:20px;line-height:20px;display: none;">
-                                                                                          &nbsp;
-                                                                                      </td>
-                                                                                  </tr>
-                                                                                </tbody>
-                                                                              </table>
-                                                                              <!-- gif end -->
-
                                                                               <!-- actual slider structure start -->
-                                                                              <table border="0" cellpadding="0" cellspacing="0" class="show-fallback" style="width:100%;max-width:620px;">
+                                                                              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:620px;">
                                                                                 <tbody>
                                                                                   <tr>
                                                                                     <td>
@@ -3457,7 +3355,6 @@ class="" style="vertical-align:top;width:570px;"
                                                                                   </tr>
                                                                                 </tbody>
                                                                               </table>
-
                                                                               <!-- actual slider structure end -->
                                                                             </td>
                                                                           </tr>
