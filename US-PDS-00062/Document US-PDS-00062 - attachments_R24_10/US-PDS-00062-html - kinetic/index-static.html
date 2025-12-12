@@ -1,4 +1,6 @@
-%%[SET @subscriberkey = _subscriberKey]%% %%[SET @content = emailname_ JobID]%% %%[SET @compkey = AttributeValue("Composite Key")]%%
+%%[SET @subscriberkey = _subscriberKey]%% 
+%%[SET @content = emailname_ JobID]%% 
+%%[SET @compkey = AttributeValue("Composite Key")]%%
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -47,9 +49,6 @@
                 td {
                     mso-table-lspace: 0pt;
                     mso-table-rspace: 0pt;
-                }
-                .height_mob {
-                    mso-height: auto !important;
                 }
             </style><!
         [endif]-->
@@ -219,14 +218,6 @@
                     padding-right: 0px !important;
                 }
 
-                #Kinetic:checked ~ * .height_mob {
-                    height: 526px;
-                }
-
-                #slide0:checked + table .height_mob {
-                    height: 526px;
-                }
-
                 .lnht20 {
                     height: 20px !important;
                     font-size: 20px !important;
@@ -253,20 +244,10 @@
                 padding-top: 20px;
             }
 
-            #slide-1:checked + table .dots label[for="slide-1"],
-            #slide-2:checked + table .dots label[for="slide-2"],
-            #slide-3:checked + table .dots label[for="slide-3"] {
-                background: #0071bc;
-            }
-
             @media screen and (max-width: 736px), yahoo and (max-width: 480px), print and (max-width: 552px) {
                 .device_width {
                     width: 100% !important;
                     display: table;
-                }
-
-                #Kinetic:checked ~ * .interactive {
-                    display: block !important;
                 }
             }
         </style>
@@ -293,133 +274,10 @@
             @-ms-viewport {
                 width: device-width;
             }
-
-            @media yahoo, only screen and (min-width: 0) {
-                body[yahoo] .mj-accordion-element {
-                    display: block;
-                }
-
-                #Kinetic:checked ~ * .staticacc {
-                    display: block !important;
-                }
-
-                input.mj-accordion-checkbox,
-                .mj-accordion-less {
-                    display: none !important;
-                }
-
-                input.mj-accordion-checkbox + * .mj-accordion-title {
-                    touch-action: manipulation;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    user-select: none;
-                }
-
-                input.mj-accordion-checkbox + * .mj-accordion-content {
-                    overflow: hidden;
-                    display: none;
-                }
-
-                input.mj-accordion-checkbox + * .mj-accordion-more {
-                    display: block !important;
-                }
-
-                input.mj-accordion-checkbox:checked + * .mj-accordion-content {
-                    display: block;
-                }
-
-                input.mj-accordion-checkbox:checked + * .mj-accordion-expand {
-                    display: none;
-                }
-
-                input.mj-accordion-checkbox:checked + * .mj-accordion-more {
-                    display: none !important;
-                }
-
-                input.mj-accordion-checkbox:checked + * .mj-accordion-less {
-                    display: block !important;
-                }
-            }
         </style>
         <style>
             .yahoo {
                 display: none;
-            }
-
-            #slide-1:checked + table .slide1-content {
-                display: initial !important;
-            }
-
-            #slide-1 + table .slide1-content {
-                display: initial;
-            }
-
-            #slide-2:checked + table .slide2-content {
-                display: initial !important;
-            }
-
-            #slide-2 + table .slide2-content {
-                display: initial;
-            }
-
-            #slide-3:checked + table .slide3-content {
-                display: initial !important;
-            }
-
-            #slide-3 + table .slide3-content {
-                display: initial;
-            }
-
-            #slide0:checked + table .slide1-content {
-                display: none;
-            }
-
-            #slide0:checked + table .slide-space {
-                display: none;
-            }
-
-            #slideSSI:checked + table .outerCon {
-                display: none !important;
-            }
-
-            @media yahoo, only screen and (min-width: 0) {
-                #Kinetic:checked ~ * .incTab {
-                    display: inline-block !important;
-                }
-
-                #Kinetic:checked ~ * .interactive {
-                    display: block !important;
-                }
-
-                #slide0:checked + table .slide2-content {
-                    display: none;
-                }
-
-                #slide0:checked + table .slide3-content {
-                    display: none;
-                }
-
-                #Kinetic:checked ~ * .height_mob {
-                    height: 526px;
-                }
-
-                #slideSSI:checked + table .outerSSI {
-                    display: block !important;
-                }
-
-                #slide0:checked + table .height_mob {
-                    height: 526px;
-                }
-
-                #Kinetic:checked ~ * .lnht42 {
-                    height: 42px !important;
-                    font-size: 42px !important;
-                    line-height: 42px !important;
-                }
-
-                #Kinetic:checked ~ * .cardspace {
-                    display: block !important;
-                }
             }
 
             .slide1-content,
@@ -434,16 +292,6 @@
             .slide2-content td,
             .slide3-content td {
                 padding: 0px 0px 0px 0px;
-            }
-
-            #CarouselWrapper {
-                width: 460px !important;
-                display: table;
-                overflow: hidden;
-            }
-
-            .CarouselMain {
-                width: 460px !important;
             }
 
             .button {
@@ -462,11 +310,6 @@
             }
 
             @media screen and (max-width: 736px), yahoo and (max-width: 480px), print and (max-width: 552px) {
-                #CarouselWrapper,
-                .CarouselMain {
-                    width: 100% !important;
-                }
-
                 .slide1-content,
                 .slide2-content,
                 .slide3-content {
@@ -514,10 +357,6 @@
                     display: inline !important;
                 }
 
-                #slide0:checked + table .height_mob {
-                    height: 610px !important;
-                }
-
                 .mob-pad45 {
                     padding: 20px 33px 20px 33px !important;
                 }
@@ -525,10 +364,6 @@
                 .pdlr18 {
                     padding-left: 18px !important;
                     padding-right: 18px !important;
-                }
-
-                #slide0:checked + table .pdB20card2 {
-                    padding-bottom: 20px !important;
                 }
 
                 .pdb20 {
@@ -562,12 +397,6 @@
                     padding: 18px 44px 18px 44px !important;
                 }
 
-                #Kinetic:checked ~ * .lnht42 {
-                    height: 20px !important;
-                    font-size: 20px !important;
-                    line-height: 20px !important;
-                }
-
                 .pd-card2-txt2 {
                     padding: 0px 51px 0px 51px !important;
                 }
@@ -589,11 +418,7 @@
             }
 
             @media only screen and (max-width: 368px) {
-                #slide0:checked + table .height_mob {
-                    height: 637px !important;
-                }
-
-                .mob-pad8 {
+               .mob-pad8 {
                     padding-left: 8px !important;
                     padding-right: 8px !important;
                 }
@@ -621,110 +446,6 @@
             }
         </style>
 
-        <style data-name="interactive" data-ignore-inlining>
-            /* Reordering */
-            #Kinetic:checked ~ * #One,
-            #Kinetic:checked ~ * #Two,
-            #Kinetic:checked ~ * #Three,
-            #Kinetic:checked ~ * #Four,
-            #Kinetic:checked ~ * #legal1,
-            #Kinetic:checked ~ * #legal2,
-            #Kinetic:checked ~ * #legal3,
-            #Kinetic:checked ~ * #legal4,
-            #Kinetic:checked ~ * #legal5,
-            #Kinetic:checked ~ * #legal6 {
-                display: none;
-            }
-
-            /* Reording the content cards with caption-side, then showing the carousel slide that is currently selected, while hiding the others */
-            #slide-1:checked + table .slide1-content {
-                display: initial !important;
-                caption-side: top !important;
-                background-image: url("%%=CloudPagesURL(30134, "subscriberkey", @subscriberkey, "emailName", @content, "actionID", "FirstSlide")=%%");
-            }
-
-            #slide-2:checked + table .slide2-content {
-                display: initial !important;
-                caption-side: top !important;
-                background-image: url("%%=CloudPagesURL(30134, "subscriberkey", @subscriberkey, "emailName", @content, "actionID", "SecondSlide")=%%");
-            }
-
-            #slide-3:checked + table .slide3-content {
-                display: initial !important;
-                caption-side: top !important;
-                background-image: url("%%=CloudPagesURL(30134, "subscriberkey", @subscriberkey, "emailName", @content, "actionID", "ThirdSlide")=%%");
-            }
-
-            #Kinetic:checked ~ * .staticacc {
-                display: block !important;
-            }
-        </style>
-        <style data-name="interactive" data-ignore-inlining>
-            /* SSI Toggle */
-            .toggleContainer {
-                position: relative;
-            }
-
-            .toggle1 {
-                position: absolute;
-                right: 5px;
-                top: 10px;
-            }
-
-            .toggle2 {
-                position: absolute;
-                right: 10px;
-                top: 10px;
-            }
-
-            #Kinetic:checked ~ * #ClosedSSI:checked ~ #closedSSI {
-                display: inline-block !important;
-            }
-
-            input.mj-accordion-checkbox:checked + * .mj-accordion-content {
-                display: block !important;
-                background-image: url("%%=CloudPagesURL(30134, "subscriberkey", @subscriberkey, "emailName", @content, "actionID", "expandSSI")=%%");
-            }
-        </style>
-        <style data-name="interactive" data-ignore-inlining>
-            #Kinetic:checked ~ * .interactive {
-                display: block !important;
-            }
-
-            #Kinetic:checked ~ * .fallback {
-                display: none !important;
-            }
-
-            #Kinetic:checked ~ * .& .fallback {
-                display: block !important;
-            }
-
-            #Kinetic:checked ~ * .& .interactive {
-                display: none !important;
-            }
-
-            #Kinetic:checked ~ * .legalBG {
-                background-color: #f1f1f1 !important;
-            }
-
-            #Kinetic:checked ~ *.& #One,
-            #Kinetic:checked ~ * .& #Two,
-            #Kinetic:checked ~ * .& #Three,
-            #Kinetic:checked ~ * .& #Four,
-            #Kinetic:checked ~ * .& #legal1,
-            #Kinetic:checked ~ * .& #legal2,
-            #Kinetic:checked ~ * .& #legal3,
-            #Kinetic:checked ~ * .& #legal4,
-            #Kinetic:checked ~ * .& #legal5,
-            #Kinetic:checked ~ * .& #legal6 {
-                display: block !important;
-            }
-
-            .& .controls {
-                display: none !important;
-            }
-        </style>
-
         <!--[if gte mso 9]>
             <xml>
                 <o:OfficeDocumentSettings>
@@ -747,31 +468,9 @@
                 background-image: url("https://2merck.everestengagement.com/ea/rL7XYGpnkw/?t=f&e=%%_SubscriberKey%%&c=%%=v(@compkey)=%%");
             }
         </style>
-
-        <style data-name="interactive" data-ignore-inlining>
-            #Kinetic:checked ~ * .controls {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                margin: 16px 0;
-                position: relative;
-                height: auto;
-                opacity: 1;
-                width: 100%;
-            }
-        </style>
     </head>
 
     <body bgcolor="#FFFFFF" style="padding: 0; margin: 0px">
-        <!--[if !mso]><!-->
-        <input type="checkbox" class="kinetic" name="interactive" id="Kinetic" style="position: fixed; display: none" checked />
-        <!--<![endif]-->
-        <div style="display: none; font-size: 1px; color: #333333; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden"></div>
-        <div style="display: none; max-height: 0px; overflow: hidden">
-            &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-        </div>
         <table class="wrapper" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="min-width: 100%; min-height: 100%; background-color: #ffffff">
             <tbody>
                 <tr>
