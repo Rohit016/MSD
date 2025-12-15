@@ -1,12 +1,6 @@
-%%[SET @subscriberkey = _subscriberKey]%% 
-%%[SET @content = emailname_ JobID]%% 
-%%[SET @compkey = AttributeValue("Composite Key")]%%
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
-        <script runat="server" language="ampscript">
-            ContentBlockbyId("260486");
-        </script>
         <meta charset="UTF-8" />
         <meta name="x-apple-disable-message-reformatting" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -106,6 +100,66 @@
                 display: none;
             }
 
+            body::-webkit-scrollbar {
+                width: 0;
+            }
+
+            div,
+            p,
+            a,
+            li,
+            td {
+                -webkit-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+            }
+
+            td img {
+                display: initial;
+                border: 0;
+            }
+
+            table {
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
+
+            @-ms-viewport {
+                width: device-width;
+            }
+
+            .yahoo {
+                display: none;
+            }
+
+            .slide1-content,
+            .slide2-content,
+            .slide3-content {
+                font-size: 20px;
+                line-height: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .slide1-content td,
+            .slide2-content td,
+            .slide3-content td {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .button {
+                visibility: visible !important;
+                width: 108px !important;
+                display: block !important;
+                text-align: center;
+                z-index: 7;
+                color: #ffffff !important;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px !important;
+                line-height: 16px !important;
+                font-weight: bold;
+                cursor: pointer;
+                box-sizing: border-box !important;
+            }
+
             @media screen and (max-width: 599px), yahoo and (max-width: 480px), print and (max-width: 552px) {
                 * {
                     box-sizing: border-box;
@@ -125,18 +179,11 @@
                     color: #58595b;
                 }
 
-                .device_width,
-                .brand_cell,
-                .preheader_cell,
-                .footer_cell,
-                .ves_cell,
-                .merckconnect_cell {
+                .device_width {
                     width: 100% !important;
                     display: table;
                 }
 
-                .veeva_header img,
-                .header img,
                 .main_body img,
                 .mobile_settings img {
                     display: inline-block !important;
@@ -157,33 +204,14 @@
                     display: none !important;
                 }
 
-                .veeva_header .columns .image,
-                .header .columns .image,
                 .main_body .columns .image {
                     text-align: center;
                     vertical-align: middle;
                 }
 
-                .reference p {
-                    line-height: 1em !important;
-                }
-
                 .columns th {
                     width: 100% !important;
                     display: block !important;
-                }
-
-                .columns_mobile .column__parent {
-                    height: 20px !important;
-                }
-
-                .columns_mobile .cell {
-                    height: auto !important;
-                }
-
-                .columns_mobile td table {
-                    width: 100% !important;
-                    height: 100%;
                 }
 
                 th.cell {
@@ -224,92 +252,13 @@
                     line-height: 20px !important;
                 }
             }
-        </style>
-        <style>
-            body::-webkit-scrollbar {
-                width: 0;
-            }
-
-            .dots label {
-                display: inline-block;
-                height: 12px;
-                width: 12px;
-                background: rgba(0, 110, 173, 0.5);
-                border-radius: 50%;
-                cursor: pointer;
-                margin: 2px;
-            }
-
-            .dots {
-                padding-top: 20px;
-            }
 
             @media screen and (max-width: 736px), yahoo and (max-width: 480px), print and (max-width: 552px) {
                 .device_width {
                     width: 100% !important;
                     display: table;
                 }
-            }
-        </style>
-        <style type="text/css">
-            div,
-            p,
-            a,
-            li,
-            td {
-                -webkit-text-size-adjust: none;
-                -ms-text-size-adjust: none;
-            }
 
-            TD IMG {
-                display: initial;
-                border: 0;
-            }
-
-            table {
-                mso-table-lspace: 0pt;
-                mso-table-rspace: 0pt;
-            }
-
-            @-ms-viewport {
-                width: device-width;
-            }
-        </style>
-        <style>
-            .yahoo {
-                display: none;
-            }
-
-            .slide1-content,
-            .slide2-content,
-            .slide3-content {
-                font-size: 20px;
-                line-height: 25px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            .slide1-content td,
-            .slide2-content td,
-            .slide3-content td {
-                padding: 0px 0px 0px 0px;
-            }
-
-            .button {
-                visibility: visible !important;
-                width: 108px !important;
-                display: block !important;
-                text-align: center;
-                z-index: 7;
-                color: #ffffff !important;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 13px !important;
-                line-height: 16px !important;
-                font-weight: bold;
-                cursor: pointer;
-                box-sizing: border-box !important;
-            }
-
-            @media screen and (max-width: 736px), yahoo and (max-width: 480px), print and (max-width: 552px) {
                 .slide1-content,
                 .slide2-content,
                 .slide3-content {
@@ -321,24 +270,16 @@
                     font-family: Arial, Helvetica, sans-serif;
                 }
 
-                .mob_align {
-                    vertical-align: text-bottom;
-                }
-
-                .padding_right {
-                    padding-right: 5px !important;
-                }
-
                 .mobilebg {
-                    background-image: url("https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/now-approved-bar-mobile.png") !important;
+                    background-image: url("https://img.mailinblue.com/3047716/images/content_library/original/691d56a3345d9374627280dc.png") !important;
                 }
 
                 .mobilebg2 {
-                    background-image: url("https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Mobile.png") !important;
+                    background-image: url("https://img.mailinblue.com/3047716/images/content_library/original/691d56a46a68996024e9c867.png") !important;
                 }
 
                 .mobilebg3 {
-                    background-image: url("https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/grad-border-mob.jpg") !important;
+                    background-image: url("https://img.mailinblue.com/3047716/images/content_library/original/691d56a3345d9374627280db.jpg") !important;
                 }
 
                 .d-none {
@@ -418,7 +359,7 @@
             }
 
             @media only screen and (max-width: 368px) {
-               .mob-pad8 {
+                .mob-pad8 {
                     padding-left: 8px !important;
                     padding-right: 8px !important;
                 }
@@ -430,8 +371,7 @@
                     line-height: 50px !important;
                 }
             }
-        </style>
-        <style>
+
             *[x-apple-data-detectors],
             .x-gmail-data-detectors,
             .x-gmail-data-detectors * {
@@ -444,17 +384,7 @@
                 font-weight: inherit !important;
                 line-height: inherit !important;
             }
-        </style>
 
-        <!--[if gte mso 9]>
-            <xml>
-                <o:OfficeDocumentSettings>
-                    <o:AllowPNG />
-                    <o:PixelsPerInch>96</o:PixelsPerInch>
-                </o:OfficeDocumentSettings>
-            </xml><!
-        [endif]-->
-        <style>
             @media print {
                 #_two50 {
                     background-image: url("https://2merck.everestengagement.com/ea/rL7XYGpnkw/?t=p&e=%%_SubscriberKey%%&c=%%=v(@compkey)=%%");
@@ -468,6 +398,15 @@
                 background-image: url("https://2merck.everestengagement.com/ea/rL7XYGpnkw/?t=f&e=%%_SubscriberKey%%&c=%%=v(@compkey)=%%");
             }
         </style>
+
+        <!--[if gte mso 9]>
+            <xml>
+                <o:OfficeDocumentSettings>
+                    <o:AllowPNG />
+                    <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml><!
+        [endif]-->
     </head>
 
     <body bgcolor="#FFFFFF" style="padding: 0; margin: 0px">
@@ -514,16 +453,14 @@
                                                 valign="top"
                                                 style="
                                                     background-color: #7c02bb;
-                                                    background-image: url('https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/now-approved-bar-desktop.png');
-                                                    background-position: center center;
-                                                    background-repeat: no-repeat;
-                                                    background-size: 100% 100%;
+                                                    background: url('https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021de.png') no-repeat center center / 100%
+                                                        100%;
                                                 ">
                                                 <tr>
                                                     <th class="column__parent device_width" style="width: 660px; font-weight: normal">
                                                         <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:660px;height:94px;padding:0px 20px 0px 20px; align:center;margin:0 auto;">
-<v:fill type="frame" src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/now-approved-bar-desktop.png" />
+<v:fill type="frame" src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021de.png" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                                                         <table width="100%" cellspacing="0" cellpadding="0" border="0" valign="top">
@@ -573,7 +510,7 @@
                                                         style="width: 660px; padding: 25px 0; margin: 0 auto; text-align: center">
                                                         <img
                                                             class=""
-                                                            src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/keytruda-qlex-logo.png"
+                                                            src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021dd.png"
                                                             title=""
                                                             alt="image"
                                                             width="281"
@@ -1535,7 +1472,7 @@
                                                                                                                                                                 valign="top"
                                                                                                                                                                 style="
                                                                                                                                                                     background-color: #7c02bb82;
-                                                                                                                                                                    background-image: url('https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png');
+                                                                                                                                                                    background-image: url('https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png');
                                                                                                                                                                     background-position: center center;
                                                                                                                                                                     background-repeat: no-repeat;
                                                                                                                                                                     background-size: 100% 100%;
@@ -1549,7 +1486,7 @@
                                                                                                                                                                         ">
                                                                                                                                                                         <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:578px;height:86px;padding:0px 20px 0px 20px align:center;margin:0 auto;">
-<v:fill type="frame" src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png" />
+<v:fill type="frame" src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                                                                                                                                                                         <table
@@ -1811,7 +1748,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/3week.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021db.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -1870,7 +1807,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/watch-12-2.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021dc.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -1933,7 +1870,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/inject1.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3b0b1df7d004969b6.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -2052,7 +1989,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/6week.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4345d9374627280de.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -2111,7 +2048,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/watch-12-2.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021dc.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -2174,7 +2111,7 @@
                                                                                                                                                                                                             ">
                                                                                                                                                                                                             <img
                                                                                                                                                                                                                 class=""
-                                                                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/inject2.png"
+                                                                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3feba590e682021da.png"
                                                                                                                                                                                                                 title=""
                                                                                                                                                                                                                 alt="image"
                                                                                                                                                                                                                 width="60"
@@ -2317,7 +2254,7 @@
                                                                                                                     <td
                                                                                                                         class="spacer lnht20"
                                                                                                                         height=""
-                                                                                                                        style="height: 20px; font-size: 20px; line-height: 20px;">
+                                                                                                                        style="height: 20px; font-size: 20px; line-height: 20px">
                                                                                                                         &nbsp;
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -2765,7 +2702,7 @@
                                                                                                                                                     valign="top"
                                                                                                                                                     style="
                                                                                                                                                         background-color: #7c02bb82;
-                                                                                                                                                        background-image: url('https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png');
+                                                                                                                                                        background-image: url('https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png');
                                                                                                                                                         background-position: center center;
                                                                                                                                                         background-repeat: no-repeat;
                                                                                                                                                         background-size: 100% 100%;
@@ -2776,7 +2713,7 @@
                                                                                                                                                             style="width: 578px; font-weight: normal">
                                                                                                                                                             <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:578px;height:86px;padding:0px 20px 0px 20px align:center;margin:0 auto;">
-<v:fill type="frame" src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png" />
+<v:fill type="frame" src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                                                                                                                                                             <table
@@ -2980,7 +2917,7 @@
                                                                                                                                                             ">
                                                                                                                                                             <img
                                                                                                                                                                 class=""
-                                                                                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Torso.png"
+                                                                                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a36a68996024e9c865.png"
                                                                                                                                                                 title=""
                                                                                                                                                                 alt="image"
                                                                                                                                                                 width="306"
@@ -3009,7 +2946,7 @@
                                                                                                                     <td
                                                                                                                         class="spacer lnht20"
                                                                                                                         height=""
-                                                                                                                        style="height: 20px; font-size: 20px; line-height: 20px;">
+                                                                                                                        style="height: 20px; font-size: 20px; line-height: 20px">
                                                                                                                         &nbsp;
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -3052,7 +2989,7 @@
                                                                                                                                                     valign="top"
                                                                                                                                                     style="
                                                                                                                                                         background-color: #7c02bb82;
-                                                                                                                                                        background-image: url('https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png');
+                                                                                                                                                        background-image: url('https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png');
                                                                                                                                                         background-position: center center;
                                                                                                                                                         background-repeat: no-repeat;
                                                                                                                                                         background-size: 100% 100%;
@@ -3063,7 +3000,7 @@
                                                                                                                                                             style="width: 578px; font-weight: normal">
                                                                                                                                                             <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:578px;height:86px;padding:0px 20px 0px 20px align:center;margin:0 auto;">
-<v:fill type="frame" src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Card-Header-Bar-Desktop.png" />
+<v:fill type="frame" src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4feba590e682021df.png" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                                                                                                                                                             <table
@@ -3527,9 +3464,7 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td
-                                                                                                                        class="spacer"
-                                                                                                                        style="height: 20px; font-size: 20px; line-height: 20px;">
+                                                                                                                    <td class="spacer" style="height: 20px; font-size: 20px; line-height: 20px">
                                                                                                                         &nbsp;
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -3563,7 +3498,7 @@
                                             <a href="" target="_blank" alias="Learn more about clinical data for KEYTRUDA QLEX"
                                                 ><img
                                                     class="desktop_img"
-                                                    src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/img5.png"
+                                                    src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4299726abbf483745.png"
                                                     title=""
                                                     alt="image"
                                                     width="100%"
@@ -3573,7 +3508,7 @@
                                             <a href="" target="_blank" alias="Learn more about clinical data for KEYTRUDA QLEX"
                                                 ><img
                                                     class="mobile_img"
-                                                    src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/img5-mob.png"
+                                                    src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4345d9374627280e0.png"
                                                     title=""
                                                     alt="image"
                                                     style="font-size: 6px; line-height: 6px; max-width: 100%; display: none; color: #58595b"
@@ -3632,7 +3567,7 @@
                                                                                             style="padding: 0px 10px 20px 10px; margin: 0 auto; text-align: center">
                                                                                             <img
                                                                                                 class=""
-                                                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/switch_icon.png"
+                                                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691dd6dedcae1ca2839aa833.png"
                                                                                                 title=""
                                                                                                 alt="image"
                                                                                                 width="100"
@@ -3699,7 +3634,7 @@
                                                                 border="0"
                                                                 valign="top"
                                                                 style="
-                                                                    background-image: url('https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/grad-border.jpg');
+                                                                    background-image: url('https://img.mailinblue.com/3047716/images/content_library/original/691d56a36a68996024e9c863.jpg');
                                                                     background-position: center center;
                                                                     background-repeat: no-repeat;
                                                                     background-size: 100% 100%;
@@ -3708,7 +3643,7 @@
                                                                     <th class="column__parent device_width" style="width: 620px; font-weight: normal">
                                                                         <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:620px;height:84px;padding:0px 20px 0px 20px; align:center;margin:0 auto;">
-<v:fill type="frame" src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/grad-border.jpg" />
+<v:fill type="frame" src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a36a68996024e9c863.jpg" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                                                                         <table width="100%" cellspacing="0" cellpadding="0" border="0" valign="top">
@@ -3789,7 +3724,7 @@
                                                             <a href="" target="_blank" alias="Learn more about clinical data for KEYTRUDA QLEX"
                                                                 ><img
                                                                     class="desktop_img"
-                                                                    src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/learn-more-clinical-data-dsk.png"
+                                                                    src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a36a68996024e9c866.png"
                                                                     title=""
                                                                     alt="image"
                                                                     width="100%"
@@ -3799,7 +3734,7 @@
                                                             <a href="" target="_blank" alias="Learn more about clinical data for KEYTRUDA QLEX"
                                                                 ><img
                                                                     class="mobile_img"
-                                                                    src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/learn-more-clinical-data-mobi.png"
+                                                                    src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a4b0b1df7d004969bb.png"
                                                                     title=""
                                                                     alt="image"
                                                                     style="font-size: 6px; line-height: 6px; max-width: 100%; display: none; color: #58595b"
@@ -6095,7 +6030,7 @@
                                                             style="width: 335px; height: 46px; padding: 0px 20px 20px 20px; box-sizing: border-box">
                                                             <img
                                                                 class="desktop_img"
-                                                                src="https://adopsstorageaccount1.blob.core.windows.net/emailerimages/US-PDS-00062/Merck_Logo.png"
+                                                                src="https://img.mailinblue.com/3047716/images/content_library/original/691d56a3299726abbf483744.png"
                                                                 title="Merck Logo"
                                                                 alt="Merck Logo"
                                                                 width="110"
